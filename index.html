@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5RRXWJEDW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S5RRXWJEDW');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2099601462613181" crossorigin="anonymous"></script>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & Favicon untuk Google -->
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <!-- Tambahkan apple-touch-icon agar ikon dikenali di iOS dan standar favicon lainnya -->
+    <link rel="apple-touch-icon" href="logo.jpeg">
+    
+    <title>Buat Surat Lelayu & Pawartos Duka Online Gratis | Format PDF</title>
+    <meta name="description" content="Generator pembuat Surat Lelayu dan Pawartos Duka (Kabar Lelayu) Bahasa Jawa online. Tinggal isi nama, langsung jadi format PDF yang rapi dan siap sebar ke WhatsApp.">
+    <meta name="keywords" content="surat lelayu, pawartos duka, generator lelayu, cetak lelayu online, lelayu bahasa jawa, format lelayu pdf, pengumuman duka cita">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Fapskom">
+    
+    <!-- Schema Markup untuk WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Cetak Lelayu",
+      "url": "https://cetak-lelayu.my.id",
+      "description": "Aplikasi web gratis untuk membuat Surat Lelayu dan Pawartos Duka (Kabar Lelayu) Bahasa Jawa otomatis dalam format PDF.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "IDR"
+      }
+    }
+    </script>
+    
+    <!-- Schema Markup untuk FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apakah aplikasi pembuat surat lelayu ini 100% gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, aplikasi ini disediakan secara gratis untuk membantu masyarakat yang sedang berduka agar lebih mudah menyebarkan informasi kepada sanak saudara dan warga sekitar tanpa biaya apa pun."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah data yang saya masukkan aman?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sangat aman. Semua proses pembuatan dokumen PDF dilakukan secara langsung di browser perangkat Anda (Client-side). Kami tidak menyimpan data almarhum maupun keluarga di server kami."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2099601462613181" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            flex-direction: column;
+            min-height: 100vh; 
+            margin: 0; 
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+        /* Dark Mode Override */
+        body.dark-mode {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        body.dark-mode #sidebar {
+            background: rgba(15, 23, 42, 0.85);
+            color: #f8fafc;
+            box-shadow: 4px 0 24px rgba(0,0,0,0.4);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        body.dark-mode .bg-gray-50 {
+            background: rgba(30, 41, 59, 0.7);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        body.dark-mode .form-label {
+            color: #cbd5e1;
+        }
+        body.dark-mode .form-input {
+            background: rgba(15, 23, 42, 0.6);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: #f8fafc;
+        }
+        body.dark-mode .form-input:focus {
+            border-color: #6366f1;
+            background: rgba(15, 23, 42, 0.9);
+        }
+        body.dark-mode h2, body.dark-mode h3 {
+            color: #f8fafc;
+        }
+        body.dark-mode #preview-container {
+            background: transparent;
+        }
+        body.dark-mode #seo-content-section {
+            background: rgba(30, 41, 59, 0.7);
+            color: #cbd5e1;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        body.dark-mode #seo-content-section h2, body.dark-mode #seo-content-section h3 {
+            color: #f8fafc;
+        }
+        
+        body.dark-mode .text-gray-800 { color: #f8fafc; }
+        body.dark-mode .border-gray-200 { border-color: rgba(255, 255, 255, 0.1); }
+        body.dark-mode .text-blue-600 { color: #818cf8; }
+
+        #main-container {
+            display: flex;
+            width: 100%;
+            flex: 1;
+            min-height: 0;
+            align-items: stretch;
+            flex-direction: row;
+        }
+
+        #sidebar { 
+            width: 420px; 
+            background: rgba(255, 255, 255, 0.85); 
+            backdrop-filter: blur(12px);
+            padding: 24px; 
+            overflow-y: auto; 
+            box-shadow: 4px 0 24px rgba(0,0,0,0.06); 
+            z-index: 10;
+            flex-shrink: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        #preview-container { 
+            flex: 1; 
+            padding: 40px 20px; 
+            overflow-y: auto; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            transition: all 0.3s ease;
+            min-height: 0;
+            width: 100%;
+        }
+
+        #site-footer {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        /* A4 Page Styling */
+        #a4-page { 
+            width: 210mm; 
+            height: 297mm; 
+            background: white; 
+            padding: 20mm 20mm 15mm 20mm; 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15); 
+            font-family: 'Times New Roman', Times, serif; 
+            position: relative;
+            box-sizing: border-box;
+            color: black;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #scale-wrapper {
+            transform-origin: top center;
+            margin: 0 auto;
+            width: 210mm;
+            transition: transform 0.3s ease, margin 0.3s ease;
+        }
+
+        /* --- DESKTOP SCALING --- */
+        @media (min-width: 1600px) {
+            #scale-wrapper { transform: scale(1); margin-bottom: 0; }
+        }
+        @media (max-width: 1599px) and (min-width: 1400px) {
+            #scale-wrapper { transform: scale(0.9); margin-bottom: -30mm; }
+        }
+        @media (max-width: 1399px) and (min-width: 1200px) {
+            #scale-wrapper { transform: scale(0.80); margin-bottom: -60mm; }
+            #sidebar { width: 380px; }
+        }
+        @media (max-width: 1199px) and (min-width: 992px) {
+            #scale-wrapper { transform: scale(0.65); margin-bottom: -105mm; }
+            #sidebar { width: 360px; }
+        }
+
+        /* --- TABLET & MOBILE SCALING --- */
+        @media (max-width: 991px) {
+            #main-container {
+                flex-direction: column;
+                height: auto;
+                overflow: visible;
+            }
+            body {
+                height: auto !important;
+                overflow-y: auto !important;
+            }
+            #sidebar {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+                border-right: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            body.dark-mode #sidebar {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            #preview-container {
+                padding: 20px 10px;
+                overflow: hidden;
+                align-items: center;
+            }
+            #scale-wrapper {
+                transform: none !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-group.flex { flex-direction: column; }
+            .w-1\/2 { width: 100% !important; }
+            #seo-content-section { padding: 20px 15px !important; margin-top: 20px !important; }
+            #theme-toggle { top: 10px; right: 10px; padding: 6px 12px; font-size: 13px; }
+        }
+
+        /* A4 Inner Elements */
+        .header-container { text-align: center; margin-bottom: 5px; position: relative; }
+        
+        .logo-left { position: absolute; left: 0; top: 0; width: 22mm; height: 22mm; object-fit: contain; }
+        .logo-right { position: absolute; right: 0; top: 0; width: 22mm; height: 22mm; object-fit: contain; }
+
+        .header-title { font-size: 16pt; font-weight: bold; margin: 0; line-height: 1.2; }
+        .header-subtitle { font-size: 12pt; font-weight: bold; margin: 0; line-height: 1.2; }
+        .separator { border-top: 3px double black; margin-top: 15px; margin-bottom: 20px; }
+
+        .text-normal { font-size: 12pt; line-height: 1.4; margin-bottom: 8px; }
+        .text-bold { font-weight: bold; }
+        .text-center { text-align: center; }
+        .text-italic { font-style: italic; }
+        .text-underline { text-decoration: underline; }
+
+        .title-lelayu { font-size: 18pt; font-weight: bold; text-align: center; margin: 15px 0; letter-spacing: 1px;}
+        
+        .name-section { text-align: center; margin: 15px 0; }
+        .name-almarhum { font-size: 14pt; font-weight: bold; text-decoration: underline; margin-bottom: 2px;}
+        .umur-almarhum { font-size: 12pt; font-weight: bold; }
+
+        .detail-grid { display: grid; grid-template-columns: 100px 15px 1fr; font-size: 12pt; line-height: 1.4; }
+        .family-grid { display: grid; grid-template-columns: 30px 1fr 150px; font-size: 12pt; line-height: 1.4; margin-top: 5px; }
+
+        .content-body { flex: 1; }
+
+        /* Document Footer Layout */
+        .footer-container { border-top: 1px solid #000; padding-top: 8px; margin-top: auto; display: flex; justify-content: space-between; align-items: center; font-size: 10pt; font-style: italic; }
+
+        .mt-4 { margin-top: 15px; }
+        .mb-4 { margin-bottom: 15px; }
+        
+        .form-group { margin-bottom: 16px; }
+        .form-label { display: block; font-size: 13px; font-weight: 600; color: #475569; margin-bottom: 6px; letter-spacing: 0.025em; }
+        .form-input { 
+            width: 100%; 
+            padding: 10px 14px; 
+            border: 1px solid #cbd5e1; 
+            border-radius: 8px; 
+            font-size: 14px;
+            transition: all 0.2s ease;
+            background: #ffffff;
+        }
+        .form-input:focus { outline: none; border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); }
+        
+        /* AdSense Placeholder Style */
+        .ads-slot { background: rgba(248, 250, 252, 0.5); border: 2px dashed #cbd5e1; text-align: center; color: #64748b; padding: 20px; margin: 15px 0; border-radius: 12px; font-size: 12px; }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body class="selection:bg-indigo-100 selection:text-indigo-900">
+    
+    <!-- 1. HEADER (NAVIGATION) -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 shadow-sm transition-all">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-indigo-500 to-blue-600 text-white flex items-center justify-center rounded-xl shadow-md font-bold text-lg">
+                    CL
+                </div>
+                <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-slate-800 to-slate-600 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent hidden sm:block">
+                    Cetak Lelayu
+                </span>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <button id="theme-toggle" onclick="toggleTheme()" class="bg-white/90 text-slate-800 dark:bg-slate-800/90 dark:text-white px-4 py-2 rounded-full font-semibold shadow-sm hover:shadow-md transition-all duration-300 backdrop-blur-sm border border-slate-200 dark:border-slate-700 flex items-center gap-2 text-sm">
+                    <span id="theme-icon-dark" class="dark:hidden">🌙 Mode Gelap</span>
+                    <span id="theme-icon-light" class="hidden dark:inline">☀️ Mode Terang</span>
+                </button>
+                <a href="https://www.fapskom.com" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all flex items-center gap-2 bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-slate-700 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-600 hover:border-indigo-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    <span class="hidden md:inline">Kembali ke Fapskom</span>
+                    <span class="md:hidden">Fapskom</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Content Above the Fold (AdSense Requirement: Konten teks yang langsung terlihat) -->
+    <div class="w-full bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 py-6 px-4 sm:px-6 lg:px-8 z-10 relative shrink-0">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Aplikasi Pembuat Surat Lelayu & Pawartos Duka Online</h1>
+            <p class="text-slate-600 dark:text-slate-400 max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
+                Selamat datang di <strong>Cetak Lelayu</strong>. Aplikasi web ini membantu Anda membuat pengumuman berita duka cita (lelayu) berbahasa Jawa dengan format PDF standar A4 secara cepat, rapi, dan gratis. Cukup lengkapi formulir di bawah ini, dan dokumen langsung siap dicetak atau dibagikan ke warga melalui WhatsApp.
+            </p>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <div id="sidebar" class="flex flex-col h-full">
+            <div class="pb-5 mb-5 border-b border-gray-200 dark:border-slate-700">
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-white tracking-tight">Cetak Lelayu</h1>
+                <p class="text-sm text-gray-500 dark:text-slate-400 mt-1">Generator Surat Lelayu & Pawartos Duka</p>
+            </div>
+            
+            <div class="flex-1 overflow-y-auto pr-3 -mr-3 space-y-5 custom-scrollbar">
+                
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                        <span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">🏛️</span> Pengaturan Kop Surat
+                    </h3>
+                    <div class="form-group">
+                        <label class="form-label">Nama Organisasi / Paguyuban (Baris 1)</label>
+                        <input type="text" class="form-input" id="in-kop-title1" value="IKATAN PEMUDA PEMUDI">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nama Organisasi / RT-RW (Baris 2)</label>
+                        <input type="text" class="form-input" id="in-kop-title2" value="MANUNGGAL HATI">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Alamat / Subtitle Kop</label>
+                        <input type="text" class="form-input" id="in-kop-subtitle" value="Gemblangan, Timbulharjo, Sewon, Bantul (55186)">
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                        <span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">✉️</span> Penerima Surat
+                    </h3>
+                    <div class="form-group mb-0">
+                        <label class="form-label">Yth. (Nama Penerima)</label>
+                        <input type="text" class="form-input" id="in-penerima" value="Bapak /Ibu /Saudara /Masyarakat">
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                        <span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">👤</span> Data Almarhum/ah
+                    </h3>
+                    <div class="form-group">
+                        <label class="form-label">Status</label>
+                        <select class="form-input" id="in-status-almarhum">
+                            <option value="Almarhum">Almarhum</option>
+                            <option value="Almarhumah" selected>Almarhumah</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nama Lengkap & Alias</label>
+                        <input type="text" class="form-input" id="in-nama" value="xxxxx binti xxxx">
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="form-label">Umur (Yuswa)</label>
+                        <input type="text" class="form-input" id="in-umur" value="60 tahun">
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                        <span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">🕒</span> Waktu Wafat (Sedorikolo)
+                    </h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="form-group"><label class="form-label">Hari</label><input type="text" class="form-input" id="in-wafat-hari" value="Jumat Legi"></div>
+                        <div class="form-group"><label class="form-label">Tanggal</label><input type="text" class="form-input" id="in-wafat-tanggal" value="19 Mei 2026"></div>
+                    </div>
+                    <div class="form-group"><label class="form-label">Jam</label><input type="text" class="form-input" id="in-wafat-jam" value="22.00 WIB"></div>
+                    <div class="form-group mb-0"><label class="form-label">Tempat</label><textarea class="form-input resize-none" id="in-wafat-tempat" rows="2">Griyo Duhkito Gemblangan, Timbulharjo, Sewon, Bantul, Yogyakarta</textarea></div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                        <span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">⚰️</span> Waktu Pemakaman
+                    </h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="form-group"><label class="form-label">Hari</label><input type="text" class="form-input" id="in-makam-hari" value="Sabtu Paing"></div>
+                        <div class="form-group"><label class="form-label">Tanggal</label><input type="text" class="form-input" id="in-makam-tanggal" value="20 Mei 2026"></div>
+                    </div>
+                    <div class="form-group"><label class="form-label">Jam</label><input type="text" class="form-input" id="in-makam-jam" value="14.00 WIB (Jam 2 Siang)"></div >
+                    <div class="form-group mb-0"><label class="form-label">Makam</label><input type="text" class="form-input" id="in-makam-tempat" value="Makam Suci Gemblangan"></div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex justify-between items-center">
+                        <span class="flex items-center gap-2"><span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">👨‍👩‍👧‍👦</span> Keluarga Ditinggalkan</span>
+                        <button onclick="addKeluarga()" class="text-xs font-semibold bg-indigo-100 text-indigo-700 dark:bg-indigo-900/60 dark:text-indigo-300 px-3 py-1.5 rounded-lg hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors">+ Tambah</button>
+                    </h3>
+                    <div id="keluarga-container" class="space-y-2"></div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                        <span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">📝</span> Pengaturan Catatan Kaki
+                    </h3>
+                    <div class="form-group">
+                        <label class="form-label">Catatan Kiri (Keterangan/Slogan)</label>
+                        <input type="text" class="form-input" id="in-footer-left" value="Sumangga dipun-getok tularaken dhumateng warga sanesipun.">
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="form-label">Catatan Kanan (Tanggal Cetak/Instansi)</label>
+                        <input type="text" class="form-input" id="in-footer-right" value="Manunggal Hati © 2026">
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <h3 class="font-bold text-sm text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                        <span class="bg-indigo-100 dark:bg-indigo-900/50 p-1.5 rounded-lg">🖼️</span> Ganti Logo Gambar (Opsional)
+                    </h3>
+                    <div class="form-group flex gap-3 mb-0">
+                        <div class="w-1/2"><label class="form-label text-xs">Logo Kiri</label><input type="file" accept="image/*" class="text-xs w-full file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 dark:file:bg-slate-700 dark:file:text-indigo-300" onchange="loadLogo(event, 'out-logo-kiri')"></div>
+                        <div class="w-1/2"><label class="form-label text-xs">Logo Kanan</label><input type="file" accept="image/*" class="text-xs w-full file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 dark:file:bg-slate-700 dark:file:text-indigo-300" onchange="loadLogo(event, 'out-logo-kanan')"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-5 mt-4 border-t border-gray-200 dark:border-slate-700 bg-transparent">
+                <button onclick="downloadPDF()" class="w-full bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg shadow-indigo-200 dark:shadow-none hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 text-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Download PDF / Cetak
+                </button>
+            </div>
+        </div>
+
+        <div id="preview-container">
+            <div id="scale-wrapper">
+                <div id="a4-page">
+                    <div class="content-body">
+                        <div class="header-container">
+                            <!-- LOGO KIRI DAN KANAN DISET KE PLACEHOLDER YANG SESUAI -->
+                <img id="out-logo-kiri" class="logo-left" src="" alt="Logo Kiri" style="display:none;"><svg id="placeholder-logo-kiri" class="logo-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" style="opacity:0.25;"><rect width="80" height="80" fill="none" stroke="#888" stroke-width="2" rx="4"/><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-size="9" fill="#888">Logo</text></svg>
+                <img id="out-logo-kanan" class="logo-right" src="" alt="Logo Kanan" style="display:none;"><svg id="placeholder-logo-kanan" class="logo-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" style="opacity:0.25;"><rect width="80" height="80" fill="none" stroke="#888" stroke-width="2" rx="4"/><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-size="9" fill="#888">Logo</text></svg>
+                            
+                            <div class="header-title" id="out-kop-title1">IKATAN PEMUDA PEMUDI</div>
+                            <div class="header-title" id="out-kop-title2">MANUNGGAL HATI</div>
+                            <div class="header-subtitle" id="out-kop-subtitle">Gemblangan,Timbulharjo,Sewon,Bantul (55186)</div>
+                        </div>
+                        
+                        <div class="separator"></div>
+
+                        <div class="text-normal text-bold">Yth. <span id="out-penerima">Bapak /Ibu /Saudara /Masyarakat</span></div>
+                        <div class="text-normal text-bold" style="color: transparent; border-bottom: 2px dotted black; display: inline-block; min-width: 200px; margin-bottom: 10px; height: 16px;"></div>
+
+                        <div class="text-normal text-bold text-italic mt-4">Assalamu'alaikum Wr.Wb</div>
+
+                        <div class="title-lelayu">PAWARTOS LELAYU</div>
+
+                        <div class="text-normal">Inna lillahi wa inna ilaihi roji'un</div>
+                        <div class="text-normal">Sampun katimbalan sowan wonten ngarsanipun Allah SWT :</div>
+
+                        <div class="name-section">
+                            <div class="name-almarhum"><span id="out-status-almarhum">Almarhumah</span> <span id="out-nama">xxxxx binti xxxx</span></div>
+                            <div class="umur-almarhum">Yuswa : <span id="out-umur">60 tahun</span></div>
+                        </div>
+
+                        <div class="text-normal mt-4">Sedorikolo</div>
+                        <div class="detail-grid">
+                            <div>Dinten</div><div>:</div><div id="out-wafat-hari">Jumat Legi</div>
+                            <div>Tanggal</div><div>:</div><div id="out-wafat-tanggal">19 Mei 2026</div>
+                            <div>Jam</div><div>:</div><div id="out-wafat-jam">22.00 WIB</div>
+                            <div>Wonten</div><div>:</div><div id="out-wafat-tempat">Griyo Duhkito Gemblangan, Timbulharjo, Sewon, Bantul, Yogyakarta</div>
+                        </div>
+
+                        <div class="text-normal mt-4">Jenazah badhe dipunkasareaken</div>
+                        <div class="detail-grid">
+                            <div>Dinten</div><div>:</div><div id="out-makam-hari">Sabtu Paing</div>
+                            <div>Tanggal</div><div>:</div><div id="out-makam-tanggal">20 Mei 2026</div>
+                            <div>Jam</div><div>:</div><div id="out-makam-jam">14.00 WIB (Jam 2 Siang)</div>
+                            <div>Wonten ing makam</div><div>:</div><div id="out-makam-tempat">Makam Suci Gemblangan</div>
+                        </div>
+
+                        <div class="text-normal mt-4" style="text-align: justify;">
+                            Dhumateng Bpk/Ibu/Saudara kasuwun paring pakurmatan ingkang pungkasan dhumateng <span id="out-status-almarhum-2">Almarhumah</span> kasebat. Mugi dadosna ing pamriksa.
+                        </div>
+
+                        <div class="text-normal text-bold text-italic mt-4">Wassalamu'alaikum Wr.Wb</div>
+
+                        <div class="text-normal">Ingkang nandang sungkawa :</div>
+                        <div id="out-keluarga-list"></div>
+                    </div>
+
+                    <div class="footer-container">
+                        <div id="out-footer-left">Sumangga dipun-getok tularaken dhumateng warga sanesipun.</div>
+                        <div id="out-footer-right">Manunggal Hati © 2026</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="ads-slot w-full max-w-2xl mt-4">
+                 <p>[IKLAN GOOGLE ADSENSE - RESPONSIVE BANNER]</p> 
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <!-- 2. SEO ARTICLE & FAQ SECTION (Solusi AdSense "Low Value Content") -->
+    <section class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-24 shadow-[0_-10px_40px_rgba(0,0,0,0.02)] relative z-10 w-full shrink-0">
+        <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-700 dark:text-slate-300 leading-relaxed text-sm md:text-base">
+            
+            <header class="mb-12 text-center">
+                <span class="text-xs font-bold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-900/50 px-3 py-1 rounded-full">
+                    Panduan & Informasi
+                </span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4 leading-tight">
+                    Mengubah Duka Menjadi Kemudahan: Panduan Menggunakan Cetak Lelayu
+                </h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-blue-500 mx-auto rounded-full"></div>
+            </header>
+
+            <div class="mb-10 group">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-3">
+                    <span class="bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400 w-8 h-8 flex items-center justify-center rounded-lg shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-colors">1</span> 
+                    Deskripsi Aplikasi: Apa Itu Cetak Lelayu Digital?
+                </h3>
+                <p class="mb-4">
+                    Di era digital yang serba cepat ini, teknologi tidak hanya mempermudah urusan bisnis atau pendidikan, tetapi juga sangat membantu masyarakat dalam hal-hal yang bersifat sosial dan budaya. Salah satunya adalah <strong>Cetak Lelayu</strong>, sebuah aplikasi <em>generator</em> surat pawartos duka atau surat lelayu online yang dirancang khusus untuk memudahkan masyarakat dalam menyebarkan berita duka cita.
+                </p>
+                <p class="mb-4">
+                    Secara tradisional, ketika ada warga yang meninggal dunia, pengurus RT, RW, atau kaum rois harus mengetik ulang surat pemberitahuan duka cita menggunakan aplikasi pengolah kata seperti Microsoft Word, mencetaknya, lalu membagikannya secara fisik atau memfotonya untuk dikirim via grup WhatsApp. Proses ini memakan waktu yang tidak sedikit di tengah situasi yang sedang sibuk dan berduka. Dengan hadirnya aplikasi Cetak Lelayu digital, proses panjang tersebut dipangkas menjadi hitungan menit. Aplikasi ini adalah sebuah <em>micro-tool</em> berbasis web yang otomatis menyusun dan memformat data almarhum/almarhumah menjadi sebuah dokumen PDF surat lelayu berbahasa Jawa yang rapi, terstruktur, dan siap cetak atau sebar.
+                </p>
+            </div>
+
+            <div class="mb-10 group">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-3">
+                    <span class="bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400 w-8 h-8 flex items-center justify-center rounded-lg shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-colors">2</span> 
+                    Cara Penggunaan: Langkah Mudah Membuat Surat Lelayu
+                </h3>
+                <p class="mb-4">
+                    Penggunaan alat ini dirancang agar sangat ramah pengguna (<em>user-friendly</em>), bahkan bagi mereka yang tidak terbiasa dengan desain atau teknologi. Berikut adalah langkah-langkah mudah untuk membuat surat pawartos duka:
+                </p>
+                <ul class="space-y-3 mb-4 pl-2">
+                    <li class="flex gap-3">
+                        <svg class="w-6 h-6 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>Mengisi Data Kop Surat:</strong> Mulailah dengan mengisi nama organisasi, paguyuban, atau identitas RT/RW. Anda juga bisa menyesuaikan alamat atau <em>subtitle</em> kop sesuai dengan daerah Anda.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-6 h-6 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>Melengkapi Identitas:</strong> Masukkan nama lengkap almarhum/almarhumah, alias (jika ada), umur (yuswa), serta status penerima surat.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-6 h-6 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>Menentukan Waktu Wafat & Pemakaman:</strong> Isi hari, tanggal, jam, dan tempat wafat (<em>sedorikolo</em>). Lanjutkan dengan mengisi detail waktu dan tempat pemakaman agar para pelayat mengetahui informasi secara akurat.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-6 h-6 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>Mencetak atau Mengunduh PDF:</strong> Setelah pratinjau otomatis terlihat rapi, klik tombol "Download PDF / Cetak". File PDF akan langsung tersimpan dan siap dibagikan melalui WhatsApp atau dicetak.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-10 group">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-3">
+                    <span class="bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400 w-8 h-8 flex items-center justify-center rounded-lg shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-colors">3</span> 
+                    Mengenal Tradisi Lelayu di Masyarakat Jawa
+                </h3>
+                <p class="mb-4">
+                    Tradisi lelayu memiliki akar yang sangat kuat di kalangan masyarakat Jawa. Kata "lelayu" sendiri merujuk pada berita kematian atau duka cita. Dalam budaya Jawa, menyebarkan lelayu bukan sekadar memberi tahu bahwa seseorang telah tiada, melainkan merupakan perwujudan dari nilai-nilai <em>paseduluran</em> (persaudaraan) dan <em>gotong royong</em>.
+                </p>
+                <p class="mb-4">
+                    Ketika lelayu disebarkan, warga sekitar secara spontan akan menghentikan aktivitas mereka untuk memberikan penghormatan terakhir (takziah), membantu proses pemandian jenazah, penggalian makam, hingga penyiapan acara doa bersama. Surat lelayu umumnya ditulis menggunakan tata bahasa Jawa krama inggil yang halus, sebagai bentuk penghormatan baik kepada almarhum/ah maupun kepada masyarakat yang menerima surat tersebut. Format surat yang baku ini telah diwariskan secara turun-temurun untuk menjaga adab dan etika dalam bermasyarakat.
+                </p>
+            </div>
+
+            <div class="group">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-3">
+                    <span class="bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400 w-8 h-8 flex items-center justify-center rounded-lg shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-colors">4</span> 
+                    Kenapa Surat Lelayu Digital Sangat Penting?
+                </h3>
+                <p class="mb-4">
+                    Transisi dari surat lelayu konvensional ke surat lelayu digital membawa berbagai keuntungan signifikan. <strong>Pertama, Efisiensi Waktu.</strong> Dalam situasi duka, keluarga seringkali sibuk mengurus jenazah. Mengetik dokumen dari nol membutuhkan waktu berharga. Generator lelayu memungkinkan pembuatan surat hanya dengan mengisi form, sehingga informasi bisa segera tersebar sebelum waktu pemakaman tiba.
+                </p>
+                <p class="mb-4">
+                    <strong>Kedua, Kerapian dan Standarisasi.</strong> Tidak semua orang memiliki keahlian dalam memformat dokumen Microsoft Word yang rapi. Generator ini memastikan bahwa jarak spasi, ukuran huruf, dan tata letak dokumen sudah berstandar A4 yang profesional, tidak miring atau terpotong ketika dibaca di layar ponsel maupun saat dicetak di atas kertas.
+                </p>
+                <p>
+                    <strong>Ketiga, Jangkauan yang Lebih Luas.</strong> Format PDF yang dihasilkan sangat kompatibel untuk disebarkan melalui media sosial dan aplikasi pesan instan seperti WhatsApp. Hal ini sangat membantu untuk memberi tahu kerabat yang berada di luar kota secara <em>real-time</em>. Alat Cetak Lelayu digital ini tidak menghilangkan esensi tradisi Jawa, melainkan menjembataninya dengan teknologi agar nilai kepedulian sosial dapat berjalan lebih efisien di era modern.
+                </p>
+            </div>
+        </article>
+
+        <!-- FAQ Section (High Value Content untuk AdSense) -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-16 border-t border-slate-200 dark:border-slate-700">
+            <header class="mb-8 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-2">Pertanyaan yang Sering Diajukan (FAQ)</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">Informasi tambahan seputar penggunaan generator lelayu online.</p>
+            </header>
+            
+            <div class="space-y-4">
+                <div class="bg-slate-50 dark:bg-slate-800 p-5 md:p-6 rounded-2xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Apakah aplikasi pembuat surat lelayu ini 100% gratis?
+                    </h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed pl-7">Ya, aplikasi ini disediakan secara gratis untuk membantu masyarakat yang sedang berduka agar lebih mudah menyebarkan informasi kepada sanak saudara dan warga sekitar tanpa pungutan biaya apa pun.</p>
+                </div>
+                
+                <div class="bg-slate-50 dark:bg-slate-800 p-5 md:p-6 rounded-2xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        Apakah data yang saya masukkan aman?
+                    </h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed pl-7">Sangat aman. Semua proses penyusunan dan pembuatan dokumen PDF dilakukan secara langsung di browser HP/Laptop Anda (Client-side rendering). Kami tidak menyimpan, mengumpulkan, atau mengirimkan data almarhum maupun keluarga ke server kami.</p>
+                </div>
+                
+                <div class="bg-slate-50 dark:bg-slate-800 p-5 md:p-6 rounded-2xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+                        Bagaimana cara membagikan PDF Lelayu ke WhatsApp?
+                    </h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed pl-7">Setelah Anda mengeklik tombol "Download PDF / Cetak", file akan tersimpan di perangkat Anda. Buka aplikasi WhatsApp, pilih kontak atau grup warga, klik ikon lampiran (attachment/penjepit kertas), pilih "Dokumen", lalu kirimkan file PDF tersebut.</p>
+                </div>
+                
+                <div class="bg-slate-50 dark:bg-slate-800 p-5 md:p-6 rounded-2xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                        Mengapa teks pratinjau (preview) terlihat mengecil di HP saya?
+                    </h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed pl-7">Di layar HP (Mobile), tampilan pratinjau sengaja diperkecil secara otomatis (zoom out) agar keseluruhan kertas A4 muat di layar Anda. Namun jangan khawatir, ketika di-download menjadi PDF, resolusi dan ukurannya akan kembali normal menjadi ukuran kertas A4 standar yang rapi dan proporsional untuk dicetak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let keluargaData = [
+            { nama: "Almarhum Bpk xxx xxx", status: "( Garwo )" },
+            { nama: "Bpk xxx/Ibu xxx", status: "( anak/mantu )" },
+            { nama: "Lan Sedoyo Keluargo", status: "" }
+        ];
+
+        const syncMap = {
+            'in-kop-title1': 'out-kop-title1',
+            'in-kop-title2': 'out-kop-title2',
+            'in-kop-subtitle': 'out-kop-subtitle',
+            'in-penerima': 'out-penerima', 
+            'in-nama': 'out-nama', 
+            'in-umur': 'out-umur',
+            'in-wafat-hari': 'out-wafat-hari', 
+            'in-wafat-tanggal': 'out-wafat-tanggal', 
+            'in-wafat-jam': 'out-wafat-jam', 
+            'in-wafat-tempat': 'out-wafat-tempat',
+            'in-makam-hari': 'out-makam-hari', 
+            'in-makam-tanggal': 'out-makam-tanggal', 
+            'in-makam-jam': 'out-makam-jam', 
+            'in-makam-tempat': 'out-makam-tempat',
+            'in-footer-left': 'out-footer-left',
+            'in-footer-right': 'out-footer-right',
+        };
+
+        function setupListeners() {
+            for (let inId in syncMap) {
+                document.getElementById(inId).addEventListener('input', (e) => {
+                    document.getElementById(syncMap[inId]).innerText = e.target.value;
+                });
+            }
+            document.getElementById('in-status-almarhum').addEventListener('change', (e) => {
+                document.getElementById('out-status-almarhum').innerText = e.target.value;
+                document.getElementById('out-status-almarhum-2').innerText = e.target.value;
+            });
+        }
+
+        function renderKeluarga() {
+            const container = document.getElementById('keluarga-container');
+            const outContainer = document.getElementById('out-keluarga-list');
+            container.innerHTML = ''; outContainer.innerHTML = '';
+
+            keluargaData.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = "flex gap-2 mb-2 items-center";
+                div.innerHTML = `
+                    <span class="text-sm w-4">${index + 1}.</span>
+                    <input type="text" class="form-input p-1 text-sm flex-1" value="${item.nama}" oninput="updateKeluarga(${index}, 'nama', this.value)">
+                    <input type="text" class="form-input p-1 text-sm w-24" value="${item.status}" oninput="updateKeluarga(${index}, 'status', this.value)">
+                    <button onclick="removeKeluarga(${index})" class="text-red-500 p-1 hover:bg-red-50 rounded">❌</button>
+                `;
+                container.appendChild(div);
+
+                const outDiv = document.createElement('div');
+                outDiv.className = "family-grid";
+                outDiv.innerHTML = `<div style="text-align:right; padding-right:5px;">${index + 1}.</div><div>${item.nama}</div><div>${item.status}</div>`;
+                outContainer.appendChild(outDiv);
+            });
+        }
+
+        function updateKeluarga(index, field, value) {
+            keluargaData[index][field] = value;
+            document.getElementById('out-keluarga-list').children[index].children[field === 'nama' ? 1 : 2].innerText = value;
+        }
+
+        function addKeluarga() { keluargaData.push({ nama: "", status: "" }); renderKeluarga(); }
+        function removeKeluarga(index) { keluargaData.splice(index, 1); renderKeluarga(); }
+
+        function loadLogo(event, targetId) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) { document.getElementById(targetId).src = e.target.result; }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+            } else {
+                body.classList.add('dark-mode');
+            }
+        }
+
+        function downloadPDF() {
+            const element = document.getElementById('a4-page');
+            const namaAlmarhum = document.getElementById('in-nama').value || "Almarhum";
+            
+            const opt = {
+                margin: 0, 
+                filename: 'Surat Lelayu ' + namaAlmarhum + '.pdf',
+                image: { type: 'jpeg', quality: 0.98 }, 
+                html2canvas: { 
+                    scale: 2, 
+                    useCORS: true, 
+                    scrollY: 0,
+                    onclone: function(clonedDoc) {
+                        // Memaksa hasil clone PDF kembali ke ukuran normal 100% saat dicetak
+                        const wrapper = clonedDoc.getElementById('scale-wrapper');
+                        if (wrapper) wrapper.style.transform = 'none';
+                        const clonedElement = clonedDoc.getElementById('a4-page');
+                        clonedElement.style.transform = 'none';
+                        clonedElement.style.margin = '0';
+                        clonedElement.style.boxShadow = 'none';
+                        clonedElement.style.height = '296mm';
+                        clonedElement.style.overflow = 'hidden';
+                    }
+                }, 
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            html2pdf().set(opt).from(element).toPdf().get('pdf').then(function (pdf) {
+                const totalPages = pdf.internal.getNumberOfPages();
+                if (totalPages > 1) {
+                    for (let i = totalPages; i > 1; i--) {
+                        pdf.deletePage(i);
+                    }
+                }
+            }).save();
+        }
+
+        // --- Dynamic A4 Preview Scaling for Mobile ---
+        function updatePreviewScale() {
+            var wrapper = document.getElementById('scale-wrapper');
+            var container = document.getElementById('preview-container');
+            if (!wrapper || !container) return;
+            
+            var containerWidth = container.clientWidth - 20; // 10px padding each side
+            var a4WidthPx = 793; // 210mm in px at 96dpi
+            
+            if (window.innerWidth <= 991) {
+                var scale = Math.min(containerWidth / a4WidthPx, 1);
+                // Use CSS zoom instead of transform - zoom changes layout dimensions
+                wrapper.style.transform = 'none';
+                wrapper.style.zoom = scale;
+                wrapper.style.margin = '0 auto';
+            } else {
+                // Desktop: reset and let CSS media queries handle scaling
+                wrapper.style.zoom = '';
+                wrapper.style.transform = '';
+                wrapper.style.margin = '';
+            }
+        }
+        
+        window.addEventListener('resize', updatePreviewScale);
+        window.addEventListener('load', updatePreviewScale);
+        setTimeout(updatePreviewScale, 100);
+
+        setupListeners(); renderKeluarga();
+    </script>
+
+    <!-- 3. LEGAL FOOTER (AdSense Compliance) -->
+    <footer id="site-footer" class="w-full bg-slate-900 text-slate-300 py-12 border-t border-slate-800 shrink-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <!-- Copyright -->
+                <div class="text-sm font-medium flex flex-col items-center md:items-start gap-1">
+                    <div class="flex items-center gap-2 text-white">
+                        <div class="w-6 h-6 bg-indigo-600 flex items-center justify-center rounded-md font-bold text-[10px]">
+                            CL
+                        </div>
+                        <span class="font-bold tracking-wide">Cetak Lelayu</span>
+                    </div>
+                    <span class="text-slate-400 mt-2 text-center md:text-left">
+                        &copy; 2026 Cetak Lelayu by Fapskom. All rights reserved.
+                    </span>
+                </div>
+                
+                <!-- AdSense Mandatory Links -->
+                <nav class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4 text-sm font-medium text-slate-400">
+                    <a href="https://www.fapskom.com/privacy-policy" class="hover:text-indigo-400 transition-colors">Privacy Policy</a>
+                    <a href="https://www.fapskom.com/terms-of-service" class="hover:text-indigo-400 transition-colors">Terms of Service</a>
+                    <a href="https://www.fapskom.com/#about" class="hover:text-indigo-400 transition-colors">About Us</a>
+                    <a href="https://www.fapskom.com/#contact" class="hover:text-indigo-400 transition-colors">Contact Us</a>
+                </nav>
+                
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
